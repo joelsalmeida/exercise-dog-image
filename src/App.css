@@ -1,6 +1,7 @@
 .dog-image-app {
   position: absolute;
   inset: 0;
+  height: 100%;
   display: grid;
   place-items: center;
   align-content: center;
@@ -9,6 +10,34 @@
   background-color: aliceblue;
 }
 
+.dog-images-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow: scroll;
+  height: 450px;
+  text-align: center;
+}
+
 .dog-image {
   width: 300px;
+  margin-bottom: 1rem;
+  border: 15px solid white;
+  box-sizing: border-box;
+}
+
+button {
+  width: 300px;
+  background-color: cadetblue;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: coral;
 }
