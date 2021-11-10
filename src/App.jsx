@@ -48,8 +48,8 @@ class App extends React.Component {
     return (
       <main className="dog-image-app">
         <h1>Dog Image App</h1>
+        <button type="button" onClick={ this.fetchDogImage }>New Dog</button>
         <section className="dog-images-section">
-          <button type="button" onClick={ this.fetchDogImage }>New Dog</button>
           { loading ? 'Carregando' : this.renderDogImages()}
         </section>
       </main>
